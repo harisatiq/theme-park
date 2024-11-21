@@ -1,0 +1,141 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5f9;
+  }
+  
+  .header {
+    background-color: #cbd5e1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .logo {
+    text-decoration: none;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+  }
+  
+  .logo-light {
+    color: #6b7280;
+  }
+  
+  .logo-dark {
+    color: #374151;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #374151;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+    color: #111827;
+  }
+  
+  @media (max-width: 640px) {
+    .nav-link {
+      display: none;
+    }
+  }
+  
+  .area-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    margin: 0 auto;
+    background-color: #e2e8f0;
+    border-radius: 16px;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #4b5563;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .area-list-items {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .area-post {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 330px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .area-post:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .area-post-image {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .area-post-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .area-post-title,
+  .area-post-content {
+    padding: 8px;
+    font-size: 0.875rem;
+    color: #4b5563;
+    font-weight: 600;
+  }
+  
+  .area-post-title {
+    font-size: 1rem;
+  }
+  
+  .area-post-content {
+    font-weight: normal;
+  }
+  
